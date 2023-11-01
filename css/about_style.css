@@ -1,0 +1,806 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Pretendard';
+    min-width: 1320px;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    font-size: 18px;
+}
+
+/*헤더*/
+.header_scroll{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.header1{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #0a0a0a;
+}
+header ul{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    display: block;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 10px 10px;
+    background:linear-gradient(to right, rgba(255,255,255,0) 50%, #080808 50%);
+    background-size:200%;
+    transition:.35s;
+    padding: 3px 5px;
+
+}
+header .nav a{
+    color: #ececec;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+.header1 .nav a{
+    color: #080808;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.header1 .nav a:hover{
+    background-position:-100% 0;
+    color: #f5f5f5;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+header a:hover{
+    background-position:-100% 0;
+    color: #f5f5f5;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.wrap{
+    overflow: hidden;
+
+}
+section {
+    height: 500vh;
+}
+.mainlogo{
+    font-family: 'Climate Crisis';
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -90px;
+}
+
+/*메인배너*/
+.main1{
+    width: 100%;
+    position: relative;
+}
+.main1 video{
+    width: 100%;
+    z-index: -2;
+    display: block;
+}
+.main1_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 100%;
+    background-color: #f5f5f548;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    text-align: left;
+    padding: 10% 100px 0;
+    box-sizing: border-box;
+}
+.main1_1 h3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f5f5f5;
+    letter-spacing: -2px;
+}
+.main1_1 h2{
+    font-size : 50px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #f5f5f5;
+    color: #f5f5f500;
+    margin-bottom: 50px;
+}
+.main1_1 p{
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 120px;
+}
+.main1_1 a{
+    display: inline-block;
+    border: #f5f5f5 solid 1px;
+    border-radius: 50px;
+    color: #f5f5f5;
+    font-size: 16px;
+    padding: 15px 60px 15px 40px;
+    background: url(../dizzyground/file/apple.png) no-repeat 80% 50%;
+    font-size: 20px;
+}
+.main1_1 a:hover{
+    background: #f5f5f538 url(../dizzyground/file/apple.png) no-repeat 80% 50%;
+}
+/*메인배너*/
+
+
+/*메인2*/
+.main2{
+    width: 100%;
+    margin: 150px auto 230px;
+    text-align: center;
+}
+.main2 p{
+    font-size: 60px;
+    font-weight: bold;
+}
+.main2 h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.box1{
+    height: 60px; 
+    overflow-y: hidden;
+    display: block;
+}
+.box2{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    animation-name: grow;
+    animation-duration: 1s;
+}
+.main2_text{
+    margin-bottom: 200px;
+}
+/* 슬라이드배너 꾸미기 */
+.slide2 { 
+	width: 906px; 
+	height: 110px;
+    margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+.slide2 .swiper-slide {
+	text-align: center; 
+	font-size: 18px; 
+	background: #fff;
+	display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.slide2 .swiper-slide a{
+	width: 100%;
+	display: block;
+}
+.slide2 .swiper-slide a img{
+	display: block;
+    margin: auto;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide2 .swiper-pagination-bullet {
+	background: pink;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide2 .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide2 .swiper-horizontal>.swiper-pagination-bullets,
+.slide2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+/*메인2 앨범슬라이드*/
+.albumslide{
+    height: 261px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin: 30px 0;
+}
+.albumslide div{
+    width: 200%;
+    height: 261px;
+    background: url(../dizzyground/file/albumslide.png) repeat-x;
+    position: absolute;
+    animation: albumslide 30s linear infinite;
+}
+@keyframes albumslide{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
+
+
+
+/*메인3*/
+.main3{
+    width: 1320px;
+    height: 2500px;
+    position: relative;
+    margin: auto;
+
+}
+.main3 .textbox{
+    padding-top: 100px;
+}
+.main3_1 .textbox{
+    width: 660px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main3_2 .textbox{
+    width: 660px;
+    position: absolute;
+    top: 800px;
+    right: 0;
+}
+.main3_3 .textbox{
+    width: 660px;
+    position: absolute;
+    top: 1600px;
+    left: 0;
+}
+.main3_1 .textbox h4{
+    font-size: 45px;
+    font-weight: bold;
+}
+.textbox p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.main3_2 .textbox h4{
+    font-size: 65px;
+    font-weight: bold;
+}
+.main3_2 .imagebox{
+    overflow: hidden;
+    position: relative;
+}
+.main3_2 .keyboard{
+    position: absolute;
+    top: -40px;
+    left: 400px;
+}
+@keyframes top{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-20px);}
+}
+.keyboard{
+    animation: top 1s linear infinite alternate;
+}
+.main3_2 .drum{
+    position: absolute;
+    top: 400px;
+    left: 350px;
+}
+.drum{
+    animation: top 1s linear infinite alternate;
+}
+.main3_2 .guitar{
+    position: absolute;
+    top: -20px;
+    left: 700px;
+}
+.guitar{
+    animation: top 1s linear infinite alternate;
+}
+.main3_3 .textbox h4{
+    font-size: 62px;
+    font-weight: bold;
+}
+.main3 a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: 1px solid #080808;
+    border-radius: 30px;
+}
+.main3 a:hover{
+    color: #f5f5f5;
+    background-color: #383838;
+}
+.main3 h4{
+    margin-bottom: 30px;
+}
+.main3 p{
+    margin-bottom: 100px;
+    color: #767676;
+}
+.main3_1 .imagebox{
+    width: 1200px;
+    height: 600px;
+    background-color: #2A0CFF;
+    border-radius: 160px;
+    position: absolute;
+    top: 0;
+    right: -590px;
+    overflow: hidden;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.main3_1{
+    position: relative;
+}
+.main3_1 img{
+    position: absolute;
+    top:250px;
+    right: -360px;
+}
+.album1{
+    height: 410%;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.album1 div{
+    width: 200px;
+    height: 410%;
+    background: url(../dizzyground/file/album1.png) repeat-y;
+    position: absolute;
+    animation: album1 50s linear infinite;
+    top: 200px;
+    left: 30px;
+}
+@keyframes album1{
+    0%{top: 0;}
+    100%{top: -100%;}
+}
+.album2{
+    height: 410%;
+    width: 148px;
+    overflow: hidden;
+    position: relative;
+}
+.album2 div{
+    width: 148px;
+    height: 410%;
+    background: url(../dizzyground/file/album2.png) repeat-y;
+    position: absolute;
+    animation: album2 50s linear infinite;
+    top: -500px;
+    left: 10px;
+}
+@keyframes album2{
+    0%{top: -100%;}
+    100%{top: -0%;}
+}
+.album3{
+    height: 410%;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.album3 div{
+    width: 200px;
+    height: 410%;
+    background: url(../dizzyground/file/album3.png) repeat-y;
+    position: absolute;
+    animation: album1 50s linear infinite;
+    top: 200px;
+    left: 30px;
+}
+@keyframes album3{
+    0%{top: 0;}
+    100%{top: -100%;}
+}
+.main3_2 .imagebox{
+    width: 1200px;
+    height: 600px;
+    background-color: #2A0CFF;
+    border-radius: 160px;
+    position: absolute;
+    top: 800px;
+    left: -660px;
+}
+.main3_2{
+    position: relative;
+}
+.main3_2 img{
+    position: absolute;
+    top: 1050px;
+    left: -300px;
+}
+.main3_3 .imagebox{
+    width: 1200px;
+    height: 600px;
+    background-color: #2A0CFF;
+    border-radius: 160px;
+    position: absolute;
+    top: 1600px;
+    right: -560px;
+}
+.ent{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ent div{
+    width: 410%;
+    height: 100%;
+    background: url(../dizzyground/file/ent.png) repeat-x;
+    position: absolute;
+    animation: ent 15s linear infinite;
+    top: 200px;
+}
+@keyframes ent{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
+.main3_3{
+    position:relative
+}
+.main3_3 img{
+    z-index: 5;
+    position: absolute;
+    top: 1800px;
+    right: -350px;
+}
+
+/*메인4*/
+.main4{
+    width: 2000px;
+    height: 1500px;
+    margin: auto;
+}
+.monthly1, .monthly2{
+    height: 200px;
+    padding: 10px 0 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #080808;
+    border-bottom: #f5f5f5 solid 1px;
+}
+.monthly3{
+    height: 200px;
+    padding: 50px 0 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: #080808;
+    border-bottom: #f5f5f5 solid 1px;
+}
+.monthly1 div{
+    width: 200%;
+    height: 184px;
+    background: url(../dizzyground/file/banner_monthly.png) repeat-x;
+    position: absolute;
+    animation: monthly1 25s linear infinite;
+}
+@keyframes monthly1{
+    0%{right: 0;}
+    100%{right: -100%;}
+}
+.monthly2 div{
+    width: 200%;
+    height: 184px;
+    background: url(../dizzyground/file/banner_onoff.png) repeat-x;
+    position: absolute;
+    animation: monthly2 25s linear infinite;
+}
+@keyframes monthly2{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
+.monthly3 div{
+    width: 200%;
+    height: 184px;
+    background: url(../dizzyground/file/banner_fast.png) repeat-x;
+    position: absolute;
+    animation: monthly3 25s linear infinite;
+}
+@keyframes monthly3{
+    0%{right: 0;}
+    100%{right: -100%;}
+}
+.back2{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #080808;
+    position: relative;
+}
+.back2 a{
+    display: block;
+    -webkit-text-stroke: 1px #f5f5f5;
+    font-size: 120px;
+    font-weight: 700;
+    padding: 50px 550px 50px 900px;
+    position: absolute;
+    z-index: 20;
+}.back2 a:hover{
+    color: #f5f5f5;
+}
+.main4_back{
+    position: relative;
+}
+.main4_back img{
+    position: absolute;
+    top: 730px;
+    left: 550px;
+}
+
+/*메인5*/
+.main5{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.main5 p{
+    font-size: 50px;
+    font-weight: bold;
+}
+.phone{
+    margin: auto;
+}
+.main5_in{
+    position: relative;
+    margin: auto;
+    width: 1320px;
+    text-align: center;
+    padding-bottom: 250px;
+}
+.rev3{
+    position: absolute;
+    top:0;
+    left: -250px;
+}
+.rev4{
+    position: absolute;
+    top: 200px;
+    left: -250px;
+}
+.rev5{
+    position: absolute;
+    top: 400px;
+    left: -150px;
+}
+.rev6{
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.rev7{
+    position: absolute;
+    top: -20px;
+    right: -240px;
+}
+.rev8{
+    position: absolute;
+    top: 400px;
+    right: -220px;
+}
+.rev9{
+    position: absolute;
+    top: 200px;
+    right: -280px;
+}
+.rev10{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.rev1{
+    position: absolute;
+    top: 100px;
+    left: -100px;
+}
+.rev2{
+    position: absolute;
+    top: 100px;
+    right: -100px;
+}
+
+.main5_in a{
+    display: inline-block;
+    border: #080808 solid 1px;
+    border-radius: 70px;
+    padding: 25px 50px;
+    font-size: 26px;
+    position: absolute;
+    left: 515px;
+    top: 80%;
+}
+.main5_in a:hover{
+    color: #f5f5f5;
+    background-color: #383838;
+}
+
+/*메인6*/
+.main6{
+    width: 100%;
+    margin: auto;
+    background: url(../dizzyground/file/dizzybanner.png) no-repeat center top;
+    height: 648px;
+    position: relative;
+}
+.main6 a{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 75px 20px 50px;
+    border: #f5f5f5 solid 1px;
+    border-radius: 50px;
+    color: #f5f5f5;
+    text-align: center;
+    align-items: center;
+}
+.main6 a img{
+    width: 23px;
+}
+.button{
+    width: 520px;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.button a:nth-child(1){
+    background: url(../dizzyground/file/apple2.png) no-repeat 83% 50%;
+}
+.button a:nth-child(2){
+    background: url(../dizzyground/file/playstore.png) no-repeat 83% 50%;
+}
+
+.button a:nth-child(1):hover{
+    background: url(../dizzyground/file/apple2.png) no-repeat 83% 50% #f5f5f546;
+}
+.button a:nth-child(2):hover{
+    background: url(../dizzyground/file/playstore.png) no-repeat 83% 50% #f5f5f546;
+}
+
+.align_box{
+    width: 1320px;
+    position: relative;
+    margin: auto;
+}
+.banner_box{
+    position: absolute;
+    text-align: left;
+    top: 140px;
+    right: 50px;
+}
+.banner_title{
+    color: #f5f5f5;
+    font-family: 'Climate Crisis' ;
+    font-size: 70px;
+}
+.banner_text{
+    color: #f5f5f5;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0px 0 55px;
+}
+.fire{
+    width: 130px;
+    z-index: 3;
+    position: absolute;
+    top: 100px;
+    right: -110px;
+}
+
+/*메인7*/
+.main7 img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*푸터*/
+footer{
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    width: 100%;
+}
+.footer_wrap{
+    width: 1320px;
+    margin: auto;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.sns{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.sns a{
+    color: #f5f5f59a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.sns a:hover{
+    color: #f5f5f5;
+}
+.foot1a{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 330px;
+    margin-bottom: 30px;
+}
+.foot1 p{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.foot1{
+    margin-top: 50px;
+}
+.foot2{
+    text-align: right;
+    font-size: 14px;
+    color: #8d8d8d;
+}
+.subscribe a{
+    color: #f5f5f5;
+    font-size: 13px;
+    border: 2px solid #f5f5f5;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+.subscribe a:hover{
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+.subscribe{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}

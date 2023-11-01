@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Pretendard';
+    min-width: 1320px;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    font-size: 18px;
+}
+/*헤더*/
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.nav-up{
+    top: -90px;
+}
+.header1{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #0a0a0a;
+}
+header ul{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    display: block;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 10px 10px;
+    background:linear-gradient(to right, rgba(255,255,255,0) 50%, #080808 50%);
+    background-size:200%;
+    transition:.35s;
+    padding: 3px 5px;
+}
+header a:hover{
+    background-position:-100% 0;
+    color: #f5f5f5;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.mainlogo{
+    font-family: 'Climate Crisis';
+}
+
+/*메인배너*/
+.main1{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    color: #f5f5f5;
+}
+.main1 video{
+    width: 100%;
+    z-index:-2;
+    position: relative;
+}
+.main1_1{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.texteffect{
+    height: 130px;
+    overflow: hidden;
+    display: block;
+}
+.texteffect .slideUp{
+    font-size: 130px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    animation: slideUp 2s ease;
+    display: inline-block;
+}
+@keyframes slideUp{
+    0% {transform:translateY(100%);}
+    100% {transform:translateY(0px);}
+}
+.main1 p{
+    font-size: 20px;
+    color: #f5f5f5;
+    text-align: center;
+}
+.line{
+    display: block;
+    margin: 100px auto;
+}
+
+/*네비게이션*/
+.nav1{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.nav_wrap{
+    width: 1320px;
+    margin: auto;
+}
+.nav1 a{
+    font-size: 47px;
+    color: #fff;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px #000;
+    transition: 0.2s all;
+}
+.nav1 a:hover{
+    color: rgb(34, 34, 34);
+    transition: 0.2s all;
+}
+
+/*인기게시글*/
+.popular{
+    width: 1320px;
+    margin: 0 auto 60px;
+}
+.popular h1{
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.popular h1:hover{
+    background: #0a0a0a url(../dizzyground/file/more.png) no-repeat 98% 50%;
+}
+.keyword{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0;
+}
+.keyword a{
+    display: inline-block;
+    font-size: 17px;
+    border: 1px solid #767676;
+    border-radius: 50px;
+    color: #767676;
+    padding: 10px 25px;
+    margin-right: 5px;
+    transition: 0.3s all;
+}
+.keyword a:hover{
+    color: #f5f5f5;
+    background-color: #767676;
+    transition: 0.3s all;
+}
+.popular_in{
+    width: 100%;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.popular_in table{
+    width: 640px;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+.popular_in td{
+    border-bottom: #0a0a0a 1px solid;
+}
+.popular_in tr{
+    transition: all 0.3s;
+    vertical-align: center;
+}
+.popular_in tr:hover{
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    transition: all 0.3s;
+}
+.popular_in tr:hover a{
+    color: #f5f5f5;
+    transition: all 0.3s;
+}
+.popular_in table tr td:nth-child(1){
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+}
+.popular_in table tr td:nth-child(2){
+    font-weight: bold;
+    color: #767676;
+    text-align: center;
+    padding: 0;
+}
+.popular_in table tr td:nth-child(3){
+    font-weight: 500;
+}
+.popular_in table tr td:nth-child(4){
+    color: #fff;
+}
+.popular_in table tr span{
+    color: #2A0CFF;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 7px;
+}
+
+
+/*인기게시글*/
+
+/*자유게시판*/
+.freeboard{
+    width: 1320px;
+    margin: auto;
+}
+h1:hover{
+    background: #0a0a0a url(../dizzyground/file/more.png) no-repeat 98% 50%;
+}
+h4{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.board table{
+    width: 100%;
+    font-size: 15px;
+    border-collapse: collapse;
+    font-weight: 500;
+    vertical-align: center;
+    text-align: center;
+}
+.board th{
+    font-size: 22px;
+    font-weight: bold;
+    border-top: #0a0a0a solid 2px;
+    border-bottom: #0a0a0a solid 2px;
+    padding: 15px 0;
+}
+.board td{
+    padding: 20px 0;
+    border-bottom: 1px solid #0a0a0a;
+}
+.board tr{
+    transition: all 0.2s;
+}
+.board tr:hover{
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    transition: all 0.2s;
+}
+.board tr:hover a{
+    color: #f5f5f5;
+}
+.board tr td:nth-child(1){
+    color:#767676;
+    font-weight: bold;
+}
+.board tr td:nth-child(2){
+    font-weight: 500;
+    text-align: left;
+}
+.board span{
+    font-weight: bold;
+    padding-right: 15px;
+    display: inline-block;
+}
+/*자유게시판*/
+
+/*페이지번호*/
+.page_num{
+    position: relative;
+    width: 400px;
+    margin: 50px auto;
+}
+.page{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+}
+.page_num img{
+    position: absolute;
+    top: -5px;
+    left: 52px;
+}
+.now{
+    color: #f5f5f5;
+}
+/*페이지번호*/
+
+/*카드배너*/
+.banner{
+    width: 1320px;
+    margin: 0 auto 50px;
+}
+/*카드배너*/
+
+/*구인게시판*/
+.people{
+    width: 1320px;
+    box-sizing: border-box;
+    margin: auto;
+}
+h1{
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+/*구인게시판*/
+
+/*큐앤에이*/
+.qna{
+    width: 1320px;
+    margin: auto;
+}
+.qna table tr td:nth-child(1){
+    padding: 0px 15px;
+}
+/*큐앤에이*/
+
+
+/*푸터*/
+footer{
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    width: 100%;
+}
+.footer_wrap{
+    width: 1320px;
+    margin: auto;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.sns{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.sns a{
+    color: #f5f5f59a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.sns a:hover{
+    color: #f5f5f5;
+}
+.foot1a{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 330px;
+    margin-bottom: 30px;
+}
+.foot1 p{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.foot1{
+    margin-top: 50px;
+    text-align: left;
+}
+.foot2{
+    text-align: right;
+    font-size: 11px;
+    color: #8d8d8d;
+}
+.subscribe a{
+    color: #f5f5f5;
+    font-size: 13px;
+    border: 2px solid #f5f5f5;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+.subscribe a:hover{
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+.subscribe{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}

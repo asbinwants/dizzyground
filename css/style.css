@@ -1,0 +1,994 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    min-width: 1320px;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.header1{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #0a0a0a;
+}
+header ul{
+    display:-moz-box;
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    display: block;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 10px 10px;
+    background:linear-gradient(to right, rgba(255,255,255,0) 50%, #080808 50%);
+    background-size:200%;
+    transition:.35s;
+    padding: 3px 5px;
+
+}
+.mainlogo{
+    font-family: 'Climate Crisis';
+}
+header a:hover{
+    background-position:-100% 0;
+    color: #f5f5f5;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.nav-up{
+    top: -90px;
+}
+/*메인배너*/
+.main1 {
+    width: 100%;
+    position: relative;
+}
+
+.main1 video {
+    width: 100%;
+    z-index: -2;
+}
+
+.main1_1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    z-index: 50;
+}
+
+.main1_1 p {
+    margin-bottom: 60px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main1 a {
+    border: #fff solid 1px;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0000003b;
+}
+
+.main1 a:hover {
+    background-color: #000000ad;
+}
+
+/*메인2*/
+.main2 {
+    width: 1320px;
+    height: 750px;
+    margin: auto;
+}
+
+.main2_1 {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.main2_1 .text1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.main2_1 .text2 {
+    font-size: 19px;
+    position: absolute;
+    bottom: 7%;
+    right: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 70px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.main2 h1 {
+    margin-left: 15%;
+}
+
+.main2_2 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.main2 li {
+    text-align: center;
+    width: 25%;
+    margin: 100px 30px 0 30px;
+}
+
+.main2 img {
+    margin-bottom: 30px;
+}
+
+.main2 h3 {
+    margin-bottom: 10px;
+}
+
+/*텍스트배너*/
+.banner1 {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    ;
+    height: 45px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.banner1 div {
+    width: 200%;
+    height: 45px;
+    background: url(../dizzyground/file/textbanner.png) repeat-x;
+    position: absolute;
+    top: 25%;
+    animation: banner1 15s linear infinite;
+}
+
+@keyframes banner1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+/*메인3*/
+.main3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main3_in {
+    width: 1320px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.main3_in>img {
+    position: absolute;
+    left: -700px;
+    top: 0px;
+    z-index: -1;
+}
+
+.main3_left {
+    padding-top: 150px;
+    color: #f5f5f5;
+}
+
+.main3_left .text1 {
+    margin-bottom: 30px;
+}
+
+.main3_left h2,
+.main3_left h1 {
+    font-size: 75px;
+}
+
+.main3 .text1 {
+    font-size: 25px;
+}
+
+.main3_left p {
+    font-size: 18px;
+}
+
+.main3_left2 {
+    margin-top: 180px;
+}
+
+.main3_right {
+    position: absolute;
+    right: -880px;
+    top: 145px;
+}
+
+.main3 .margin1 {
+    margin-bottom: 30px;
+}
+
+.name {
+    position: absolute;
+    bottom: 3px;
+    left: 730px;
+    z-index: 2;
+    background-color: #0a0a0a;
+    font-size: 55px;
+    font-weight: 800;
+    padding: 15px 20px;
+    opacity: 1;
+    color: #f5f5f5;
+}
+
+.hoverimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    transition: all 0.5s;
+    padding-top: 150px;
+    box-sizing: border-box;
+    font-weight: 8 00;
+}
+.swiper-slide:hover .hoverimage{
+    opacity: 1;
+}
+.hoverimage p{
+    font-size: 30px;
+}
+
+/*메인3 갤러리*/
+/* 슬라이드배너 꾸미기 */
+.gallery {
+    width: 1320px;
+    margin: 50px auto;
+    padding: 0 50px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery_inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .swiper-slide-active .name {
+    opacity: 1;
+}
+
+.gallery .swiper-slide a {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+/*.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+	color: pink;
+}*/
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+/*.gallery .swiper-button-prev:hover,
+.gallery .swiper-button-next:hover {
+	color: purple;
+}*/
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+    width: 33px;
+    height: 41px;
+}
+
+.gallery .swiper-button-prev:after,
+.gallery .swiper-button-next:after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 41px;
+}
+
+.gallery .swiper-button-prev:after {
+    background: url(../dizzyground/file/left_black.png);
+    position: absolute;
+    top: 30px;
+    left: -160px;
+}
+
+.gallery .swiper-button-next:after {
+    background: url(../dizzyground/file/right_black.png);
+    position: absolute;
+    top: 30px;
+    left: -1390px;
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery .swiper-pagination-bullet {
+    background: rgb(32, 32, 32);
+    width: 6px;
+    height: 6px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery .swiper-horizontal>.swiper-pagination-bullets,
+.gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -50px;
+    left: 395px;
+    text-align: left;
+}
+
+/*메인4*/
+.main4 {
+    width: 70%;
+    margin: 400px auto 0;
+}
+
+.main4 .text1 {
+    text-align: center;
+}
+
+.text3 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.text3 h2 {
+    margin-right: 10px;
+}
+
+.main4 .iframe1 {
+    text-align: center;
+}
+
+/*메인5*/
+.main5 {
+    margin-top: 200px auto 0;
+}
+
+.main5 .text1 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.main5 p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main5 .text3 {
+    margin-bottom: 30px;
+}
+
+.list3d {
+    margin: auto;
+    width: 1240px;
+    padding: 0 66px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/*광고배너*/
+.banner2 {
+    width: 100%;
+    margin-bottom: 180px;
+    margin-top: 50px;
+}
+
+/*광고배너*/
+
+/*메인6*/
+.main6 {
+    margin-bottom: 150px;
+}
+
+.main6_1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.main6_1 .text1 {
+    margin-bottom: 50px;
+}
+
+.main6 h1 {
+    margin-bottom: 30px;
+}
+
+.line {
+    border-top: #000 solid 1px;
+}
+
+.table_title {
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.table_title a {
+    border: #767676 1px solid;
+    border-radius: 30px;
+    color: #767676;
+    padding: 8px 20px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.main6_2 table {
+    width: 60%;
+    height: 300px;
+    margin: 0px auto;
+    border: none;
+    border-collapse: collapse;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.main6_2 table td {
+    padding: 0;
+    border-bottom: #000 solid 1px;
+    font-size: 18px;
+}
+
+.main6_2 .bold {
+    font-weight: 800;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.main6 img {
+    display: block;
+}
+
+.heart {
+    text-align: center;
+    align-items: center;
+    width: 80px;
+}
+
+.main6_2 table tr:hover {
+    background-color: #000;
+    color: #f5f5f5;
+    transition: all 0.3s;
+}
+
+.main6_2 table tr:hover a {
+    color: #f5f5f5;
+    transition: all 0.3s
+}
+
+/*메인7*/
+.main7 {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.main7 .text1 {
+    margin-bottom: 20px;
+}
+
+.main7 h1 {
+    margin: 20px;
+}
+
+.main7 p {
+    margin-bottom: 30px;
+}
+
+.main7_1 {
+    margin-bottom: 150px;
+}
+
+.main7_2 {
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.main7_2 table {
+    text-align: left;
+    align-items: center;
+}
+
+.main7_2 table td {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.main7_2 table img {
+    padding: 0 3px;
+    vertical-align: middle;
+}
+
+.tables_3 .tabletitle p {
+    background: #0a0a0a url(../dizzyground/file/mailbox.png) no-repeat 108% 35%;
+}
+
+.tables_2 .tabletitle p {
+    background: #0a0a0a url(../dizzyground/file/think.png) no-repeat 108% 35%;
+}
+
+.tables_1 .tabletitle p {
+    background: #0a0a0a url(../dizzyground/file/speech.png) no-repeat 108% 35%;
+}
+
+.tabletitle p {
+    color: #f5f5f5;
+    padding: 5px 40px 5px 10px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #0a0a0a;
+    position: relative;
+}
+
+.main7 table td {
+    border-bottom: 1px solid #0a0a0a;
+}
+
+.tables_2 {
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.main7 .more2 {
+    text-align: right;
+    display: block;
+    color: #767676;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.main7 .more2:hover {
+    color: #0a0a0a;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+}
+
+.main7_2 table tr:hover {
+    background-color: #0a0a0a;
+    transition: 0.2s all;
+}
+
+.main7_2 table tr:hover a {
+    color: #f5f5f5;
+    transition: 0.2s all;
+}
+
+/*메인8*/
+.main8 {
+    margin: auto;
+}
+
+.main8_1 {
+    text-align: center;
+}
+
+.main8 .text1 {
+    margin-bottom: 20px;
+}
+
+.main8 h1 {
+    margin: 20px;
+}
+
+.main8 p {
+    margin-bottom: 60px;
+}
+
+.store img {
+    width: 100%;
+    height: 100%;
+}
+
+.m82_all {
+    margin: auto;
+}
+
+.main8_2 {
+    margin: auto;
+}
+
+.store {
+    margin: auto;
+}
+
+.m82_1 {
+    width: 659px;
+    height: 624px;
+}
+
+.m82_4 {
+    width: 660px;
+}
+
+.m82_5 {
+    width: 330px;
+}
+
+.m82_all img {
+    display: block;
+}
+
+.m82_6 {
+    width: 330px;
+}
+
+.m82_all {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.m82_2 {
+    width: 660px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main8_2 {
+    width: 1319px;
+    margin: auto;
+}
+
+.m82_5:hover img {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.m82_5 {
+    overflow: hidden;
+    position: relative;
+}
+
+.m82_5 img {
+    transition: all 1s;
+}
+
+.m82_4:hover img {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.m82_4 {
+    overflow: hidden;
+    position: relative;
+}
+
+.m82_4 img {
+    transition: all 1s;
+}
+
+.m82_1:hover img {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.m82_1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.m82_1 img {
+    transition: all 1s;
+}
+
+.blackbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f5f5f5;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.blackbox p {
+    margin-top: 100px;
+}
+
+.m82_1 .blackbox p {
+    margin-top: 250px;
+}
+
+.m82_1:hover .blackbox {
+    opacity: 1;
+}
+
+.m82_5:hover .blackbox {
+    opacity: 1;
+}
+
+.m82_4:hover .blackbox {
+    opacity: 1;
+}
+
+.m82_6 {
+    position: relative;
+}
+
+.m82_6 p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 20;
+    color: #f5f5f5;
+    font-size: 30px;
+}
+
+.m82_6 span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 20;
+    color: #f5f5f5;
+    font-size: 30px;
+}
+
+/*하단배너*/
+.main9 {
+    background: url(../dizzyground/file/keyword.png) no-repeat center top;
+    height: 975px;
+    margin-top: 300px;
+    overflow: hidden;
+}
+
+.main9 h1 {
+    font-size: 78px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.main9_1 {
+    position: relative;
+    color: #f5f5f5;
+    width: 1320px;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.main9_1_in {
+    text-align: center;
+}
+
+.main9_2 a {
+    display: inline-block;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-size: 42px;
+    font-weight: 600;
+    padding: 12px 60px;
+    border-radius: 50px;
+    border: solid 4px #f5f5f5;
+    margin: 3px;
+    transition: font-weight, font-size 0.5s ease;
+}
+
+.main9_2 a:hover {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+    font-weight: 800;
+    font-size: 350%;
+    transition: font-weight, font-size 0.5s ease;
+}
+
+.main9_2 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.4s;
+    margin-top: 100px;
+}
+
+.main9 .img1 {
+    z-index: 50;
+    position: absolute;
+    width: 196px;
+    height: 196px;
+    top: 350px;
+    left: 0;
+}
+
+.main9 .img2 {
+    z-index: 60;
+    position: absolute;
+    width: 387px;
+    height: 387px;
+    top: 530px;
+    right: -170px;
+}
+
+
+/*하단배너2*/
+.main10 img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+/*푸터*/
+footer {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    width: 100%;
+}
+
+.footer_wrap {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sns {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.sns a {
+    color: #f5f5f59a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.sns a:hover {
+    color: #f5f5f5;
+}
+
+.foot1a {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 330px;
+    margin-bottom: 30px;
+}
+
+.foot1 p {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.foot1 {
+    margin-top: 50px;
+}
+
+.foot2 {
+    text-align: right;
+    font-size: 11px;
+    color: #8d8d8d;
+}
+
+.subscribe a {
+    color: #f5f5f5;
+    font-size: 13px;
+    border: 2px solid #f5f5f5;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.subscribe a:hover {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.subscribe {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
